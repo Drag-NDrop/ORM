@@ -1,0 +1,10 @@
+Anvendelse: Derefter skal I anvende, hvad I har lært ved at bruge både 
+Database-First og Code-First tilgange i et lille projekt. I begge tilfælde skal I
+inkorporere brugen af arv, implementere CRUD-operationer (Create, Read, 
+Update, Delete), og oprette relationer mellem tabellerne (one-to-one, one-tomany, og many-to-many). For eksempel kan I:
+• Database-First: Opret en lille database for en fiktiv virksomhed med 
+forskellige tabeller (f.eks. "Medarbejdere", "Afdelinger", "Projekter") og 
+brug ORM-frameworket til at generere den tilsvarende kode. Sørg for, 
+at mindst en af jeres tabeller demonstrerer et eksempel på arv (f.eks. en 
+"Manager" tabel, der arver fra "Medarbejder"), skaber relationer mellem 
+tabeller, og implementerer CRUD-operationer for denne tabel.

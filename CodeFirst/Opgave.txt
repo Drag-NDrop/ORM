@@ -1,0 +1,6 @@
+• Code-First: Skriv kode for at definere en anden virksomheds data 
+(f.eks. "Kunder", "Ordrer", "Produkter") og brug ORM-frameworket til at 
+generere den tilsvarende database. Også her skal mindst en af jeres 
+klasser demonstrere et eksempel på arv (f.eks. en "VIPKunde" klasse, 
+der arver fra "Kunde"), skabe relationer mellem klasser, og I skal 
+implementere CRUD-operationer for denne klasse.

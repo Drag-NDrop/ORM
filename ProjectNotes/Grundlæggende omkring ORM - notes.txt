@@ -1,0 +1,39 @@
+Grundlæggende omkring ORM
+Anvendelse af ORM
+
+
+
+
+Valg af framework:
+ * Hvorfor har vi valgt C# og Entity Framework
+ * C#
+ * Entity Framework
+
+Valg af data-strategi:
+ * Hvornår bruger vi Code-first?
+ 	* Når vi ønsker at abstrahere fra SQL laget?
+
+ * Hvornår bruger vi Database-first?
+ 	* Når vi allerede har en stabil database, der ikke skal pilles ved 
+
+
+
+Forskning:
+ * De vigtigste funktioner
+ * Hvad får vi fra ORM(Arv, Abstraction, Encapsulation, Polymorfi)
+ 	* Hvordan får vi det?
+ 	* Hvordan ser det ud i Code-First, og hvordan ser det ud i Database-First?
+ * Hvordan hånteres relationer mellem forskellige tabeller
+ * Hvordan benytter Entity Framework migrations, til at styre ændringer i databasens skema?
+ 	* Hvad er migrations?
+ 	* Hvornår bruger man migrations?
+ 	* Alternativer til migrations?
+
+
+Demonstrer forståelse med:
+1-1
+1-*
+*-*
+
+Arv
+

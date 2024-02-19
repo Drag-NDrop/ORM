@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace Code_First.Models
 {
-    [Table("tables")]
+    [Table("customers")]
     public class Customer
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string Name { get; set; }
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }

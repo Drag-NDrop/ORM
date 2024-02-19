@@ -12,9 +12,11 @@ namespace Code_First.Models
     public class Order
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public List<Product> Products { get; set; }
-
         public int CustomerId { get; set; }
+        public virtual Customer? Customer { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

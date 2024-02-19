@@ -23,7 +23,7 @@ namespace Code_First.DataContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<OrderProductMapping>().HasNoKey();
+            modelBuilder.Entity<OrderProductMapping>().HasNoKey();          
         }
     }
 }

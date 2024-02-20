@@ -18,11 +18,26 @@ namespace Database_First
                 Customer c = context.Customers.FirstOrDefault();
                 var test = context.VipCustomers.FirstOrDefault(v => v.IdNavigation == c);
 
+                // Create
+                Customer customer = new Customer();
+                customer.Name = "Test";
+                context.Customers.Add(customer);
+                context.SaveChanges();
 
+                // Read
                 List<OrderProductMapping> ordreMapping = context.OrderProductMappings.ToList();
-                List<Order> orders = context.Orders.ToList();
-                List<Product> products = context.Products.ToList();
-                List<Customer> customers = context.Customers.ToList();
+                List<Order> orders                     = context.Orders.ToList();
+                List<Product> products                 = context.Products.ToList();
+                List<Customer> customers               = context.Customers.ToList();
+
+                // Update
+                // orders.FirstOrDefault().Customer.Name = "Test";
+                // context.SaveChanges();
+
+                // Delete
+                // Customer remove = customers.FirstOrDefault(x => x.Id == 5);
+                // context.Customers.Remove(remove);
+                // context.SaveChanges();
 
                 foreach (Order o in orders)
                 {
@@ -46,6 +61,9 @@ namespace Database_First
 
                 Console.WriteLine(c.Name);
 
+                // Get orders with unique products
+                context.Orders.FirstOrDefault().Products.Select(p => p).Distinct().ToList();
+                context.Orders.Select(p => p.Products).Distinct().ToList();
             }
         }
     }
